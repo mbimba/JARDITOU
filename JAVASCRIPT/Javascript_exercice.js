@@ -1,7 +1,7 @@
 // fichier script.js
 
 /*
-// Test partie 3 afficher texte
+// Test         partie 3    afficher texte
 alert("Hello 1'AFPA!");
 
 var nom = "Triomphe";
@@ -19,7 +19,7 @@ console.log("la largeur est de :" + toto + " mètres");
 
 -------------------------------------
 /*
-// Exercices partie 3 afficher texte
+// Exercices    partie 3        afficher texte
 var nom, prenom;
 
 nom = prompt("Saisissez votre nom");
@@ -35,7 +35,7 @@ console.log(nb1*nb2);
 
 
 --------------------------------------------
-// Exercices partie 3 afficher texte convertir température 
+// Exercices        partie 3 afficher texte convertir température 
 let c,f;
 c = prompt("Saisissez la température en ° Celcius");
 f = ((c*(9/5)) + 32)
@@ -49,7 +49,7 @@ console.log(temperatureenCaconvertir*9/5+32)
 
 -----------------------------------
 /*
-//Exercice d'entrainement perso
+//      Exercice d'entrainement perso
 let admin, name;
 name="john";
 admin=name;
@@ -120,7 +120,7 @@ console.log(affichagetotallivres)
 
 ----------------------------------------------
 /*
-//Exercices partie 4 Les opérateurs
+//Exercices             /partie 4 Les opérateurs
 let a, b, c, d;
 a ="100";  //une chaîne de caractères est entre doubles quotes
 b = 100
@@ -162,6 +162,7 @@ console.log("on inverse d : " + d)
 
 ----------------------------------------------
 // Quelques explications  
+
 a=prompt("entrez un chiffre")
 
 // if (!(a === b))   console.log(age)===   if (a != b)    != correspond à "différent" ou l'inverse d'une variable
@@ -177,7 +178,8 @@ else{
 ------------------------------------------
 // Mémo: === correspond à "strictement égal"    == correspond à "à peu près égal" 
 ----------------------------------------------
-// Exercices partie 5 Les conditions
+// Exercices        partie 5 Les conditions
+
 if (condition) {
     // Code exécuté si la condition est vraie
 } else {
@@ -185,7 +187,8 @@ if (condition) {
 }
 
 -----------------------
-/* QUELQUES TESTS PARTIE 5 LES CONDITIONS
+/* QUELQUES TESTS       / PARTIE 5 LES CONDITIONS
+
 t = prompt("entrez votre temperature")
 
 if (t > 38)
@@ -193,7 +196,7 @@ if (t > 38)
     alert ("Le patient a de la fievre")
 }
 
-//----------
+//---------------------------
 if (réponse == "oui")
 console.log ("Bonne reponse!");
 */
@@ -210,9 +213,9 @@ if (permis == "oui")
 }
 */
 
-/*
-// Exercice 1 PARITÉ/ partie 5 "conditions"
-/*
+/*-----------------------------------------------
+// Exercice 1 PARITÉ/       partie 5 "conditions"
+
 let nbr;
 nb = prompt ("entrez un nombre")
 if(nbr%2 == 0)
@@ -227,7 +230,8 @@ else
 */
 /*
 ------------------------------------------------
-// Exercice 2 Age/ partie 5 "conditions"
+// Exercice 2 Age/      partie 5 "conditions"
+
 let annee;
 annee= prompt ("entrez votre année de naissance")
 console.log(annee)
@@ -243,7 +247,8 @@ console.log(2024-annee)
 */
 //----------------------------------------------------
 
-/* Exercice 3 Calculette/ partie 5 "conditions"
+/* Exercice 3 Calculette/       partie 5 "conditions"
+
 let nb1, nb2, op, op1, op2, op3, op4;
 nb1 = prompt ("entrez un premier nombre entier")
 nb2 = prompt ("entrez un deuxième nombre entier")
@@ -280,7 +285,7 @@ alert("message d'erreur")
 }
 -------------------------------------------------------*/
 
-// TEST2 / partie 6 "Les boucles"
+// TEST2 /           partie 6 "Les boucles"
 
 /*
 i =5
@@ -299,7 +304,8 @@ console.log("fin de la boucle");
 
 ---------------------------------------------------------
 
-// TEST3 / partie 6 "Les boucles"                FOR
+// TEST3 /      partie 6 "Les boucles"              FOR
+
 console.log("Table de multiplication par 5");
 console.log("=============================");
 
@@ -314,7 +320,7 @@ console.log("fin de la boucle");
 
 ---------------------------------------------------------
 
-// TEST4 / partie 6 "Les boucles"    WHILE
+// TEST4 /          partie 6 "Les boucles"    WHILE
 var i = 0;
 
 console.log("Table de multiplication par 5");
@@ -358,7 +364,8 @@ while (i <= 10)
     i++;
 }
 -------------------------------------------------------
-// EXERCICE 1 "SAISIE"    / Partie 6 Les boucles
+// EXERCICE 1 "SAISIE"       / Partie 6 Les boucles
+
 let prenom =[];
 for (let i = 1; i<4; i++){
     prenom [i]= prompt ("saisissez votre prénom N°"+i+" ou clic sur annuler pour arrêter la saisie");
@@ -382,7 +389,7 @@ while (n>0)
 
 -------------------------------------------------------*/
 /*
-// EXERCICE 3 "Moyenne"    / Partie 6 Les boucles
+// EXERCICE 3 "Moyenne"         / Partie 6 Les boucles
 
 var n = 1;
 var somme = 0;
@@ -399,7 +406,7 @@ console.log(somme);
 console.log(somme/i);
 //-----------------------------------------------------
 /*
-// EXERCICE 4 "Multiples"    / Partie 6 Les boucles
+// EXERCICE 4 "Multiples"          / Partie 6 Les boucles
 var n,  x
 n = prompt ("entrez un premier nombre")
 x= prompt ("entrez un second nombre")
@@ -411,8 +418,68 @@ for (i=1; i<=n; i++)
     console.log(i+"x"+x+"="+(x*i));
 }
 console.log ("fin de la boucle");
--------------------------------------------------------*/
+-------------------------------------------------------
 
 // EXERCICE 5 "Nombre de voyelles"    / Partie 6 Les boucles
-var n, 
-n=prompt ("saisir un mot")
+
+var m, nombrevoyelle, compteur
+m=prompt ("saisir un mot")
+nombrevoyelle = "m"
+compteur = nombrevoyelle++
+
+-----------------------------------------------------------
+//      TEST            PARTIE 7 LES FONCTIONS
+function maFonction() 
+    {
+     var plop1 = 123;       
+       return plop1;
+    }
+
+    function maFonction2() 
+    {
+       plop2 = 456;     
+    }
+
+    plop1 = maFonction();
+
+    console.log("fonction 1 / plop1 : "+plop1);
+
+    maFonction2();
+
+    console.log("mafonction2 > plop2 : "+plop2);
+
+--------------------------------------------------------------
+// EXERCICE 1          / PARTIE 7 LES FONCTIONS   
+    //Question 1 produit  
+function produit(x,y)
+{
+    return x*y;
+}
+
+console.log(produit(6, 7))
+        //Question 2 affiche img "Voir fichier td2fonctions.html pour tester avec l'image"
+
+-----------------------------------------------------------------
+// EXERCICE 2      STRING TOKEN   / PARTIE 7 LES FONCTIONS 
+
+    //Première proposition
+function strtok(str1, str2, n){
+  return str1.split(str2)[n-1]
+}
+
+var a="1wdfgjhbdfhstlshgls";    //on a un ensemble de caractères avec un séparateur qui est le h
+strtok(a,"h", 2)    //le h entre guillement est le séparateur
+
+    //Deuxième proposition
+function bonjour(prenom) {
+  return "Bonjour, " + prenom;
+}
+    //Troisième proposition
+function strtok(str1, str2, n){
+    return str1.split(str2)[n-1]
+      }
+      
+var a="robert;dupont;amiens;80000";
+      strtok(a,";", 2)
+-------------------------------------------------------------------*/
+//      TEST            PARTIE 8 LES TABLEAUX
