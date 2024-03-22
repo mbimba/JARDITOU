@@ -481,5 +481,49 @@ function strtok(str1, str2, n){
       
 var a="robert;dupont;amiens;80000";
       strtok(a,";", 2)
--------------------------------------------------------------------*/
-//      TEST            PARTIE 8 LES TABLEAUX
+-------------------------------------------------------------------
+//      1er TEST            PARTIE 8 LES TABLEAUX
+
+function moyenne (x, y){                    //ON calcule la moyenne de deux notes x et Y. Moyenne= (x+y)/2       2 = nombre de notes
+    return (x+y)/2;
+}
+console.log(moyenne (6,2))          
+----------------------------------------------------------------
+//     2ème TEST            PARTIE 8 LES TABLEAUX
+
+var myTableau = ["pomme", "poire", "banane"]; // Données de type chaîne
+var myTableau = [123, 456, 789]; // Données de type entier
+
+var myTableau = new Array(); // Tableau vide
+var myTableau = Array(); // Tableau vide
+var myTableau = new Array(5); // Tableau vide qui contiendra 5 éléments
+var myTableau = Array(5); // Tableau vide qui contiendra 5 éléments
+var myTableau = new Array("pomme", "poire", "banane"); //Tableau avec données
+var myTableau = Array("pomme", "poire", "banane"); // Tableau avec données
+------------------------------------------------------------
+
+//     EXERCICE           PARTIE 8 LES TABLEAUX
+    //Première proposition
+var mytableau = new Array (); 
+var x = mytableau.length;
+var nb = prompt ("Entrez le nombre d'invités")
+for (var i =0; i<nb; i++)
+  {
+    mytableau[i]= prompt ("nb")
+  }
+console.log(mytableau)
+console.log(mytableau.length)
+------------------------
+   //   2ème proposition
+var mytableau = new Array (); 
+var nb = prompt ("Entrez le nombre d'invités")
+for (var i =0; i<nb; i++)
+  {
+    mytableau.push(prompt("Veuillez entrer le nom de l'invité n°"+(i+1)+" :"));
+  }
+console.log(mytableau)
+console.log(mytableau.length)
+-------------------------------------------------------------*/
+
+        // JAVASCRIPT POUR LE WEB
+        // EXERCICE PARTIE 12           LE DEVELOPPEMENT OBJECT MODEL(D.O.M.)
