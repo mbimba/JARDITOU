@@ -523,7 +523,63 @@ for (var i =0; i<nb; i++)
   }
 console.log(mytableau)
 console.log(mytableau.length)
--------------------------------------------------------------*/
+-------------------------------------------------------------
 
         // JAVASCRIPT POUR LE WEB
-        // EXERCICE PARTIE 12           LE DEVELOPPEMENT OBJECT MODEL(D.O.M.)
+   //      1er TEST     "OBJET DATE"       PARTIE 13 LES OBJETS NATIFS  
+var myDate1 = new Date() ;  // Date du jour
+var myDate2 = new Date(3600*24*365*40) ;    // Date depuis le 1er janvier 1970
+var myDate3 = new Date(2012, 9, 19) ;
+var myDate4 = new Date(2012, 9, 19, 10, 33, 12);
+var myDate5 = new Date("Jan 1, 2000 00:00:00");
+        
+console.log('new Date() : ' + myDate1.toLocaleString()); 
+console.log('new Date(3600*24*365*40) : ' + myDate2.toLocaleString());
+console.log('new Date(2012, 9, 19) : ' + myDate3.toLocaleString());
+console.log('new Date(2012, 9, 19, 10, 33, 12) : ' + myDate4.toLocaleString());
+console.log('new Date("Jan 1, 2000 00:00:00") : ' + myDate5.toLocaleString());
+console.log("");
+var annee = 1900 + myDate1.getYear();
+var mois  = myDate1.getMonth() + 1;
+var jour  = myDate1.getDate();
+console.log('date du jour : ' + jour + "/" + mois + "/" + annee);
+-------------------------------------------------------------
+         // JAVASCRIPT POUR LE WEB       
+  //      EXERCICE     "OBJET IMAGE"       PARTIE 13 LES OBJETS NATIFS 
+  var i;
+  var somme = 0;
+  var moyenne;
+  var n = -1; 
+  var mesNombres = [];
+
+while (n!=0)
+{ 
+    n = parseInt(prompt("veuillez saisir un nombre. Entrez 0 pour arrêter"));  //parseInt est une méthode qui convertit la chaien en entier
+
+    //n = prompt("veuillez saisir un nombre. Entrez 0 pour arrêter");   SI on veut faire entrer par exemple des prénoms par l'utilisateur au lieu des noombres, on retire parseInt.
+
+
+
+    if (n!=0)   // n!= correspond à différent de...Cela pourrait se traduire par >0 ou < à 0 pour cet exercice.
+    {
+      mesNombres.push(n);
+    }
+}
+
+
+for (i=0; i < mesNombres.length ; i++ )
+{
+    console.log(mesNombres[i]);
+    somme = somme + mesNombres[i];
+}
+
+console.log("Le nombre de prenoms saisi est : " + mesNombres.length);
+
+console.log("La somme des valeurs est : " + somme);
+
+moyenne = somme / mesNombres.length;
+
+console.log("La moyenne des valeurs est : " + moyenne);
+-------------------------------------------------------------*/
+
+//  EXERCICE         PARTIE 14   INTEGRER DU JAVASCRIPT DANS UNE PAGE WEB
