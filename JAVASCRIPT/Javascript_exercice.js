@@ -608,7 +608,7 @@ console.log("La moyenne des valeurs est : " + moyenne);
 ----------------------------------------------------------------
 
 //  EXERCICE        PARTIE 16   LES EXPRESSIONS REGULIERES
-    //  1er TEST
+    //  1er TESTcode
 var filtre = new RegExp("^[a-z]+$");
 var resultat = filtre.test("javascript");
 console.log(resultat);
