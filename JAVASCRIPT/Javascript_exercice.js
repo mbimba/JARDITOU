@@ -16,10 +16,8 @@ var toto = prompt("Saisissez la largeur");
 console.log("la longueur est de :" + tutu + " mètres");
 console.log("la largeur est de :" + toto + " mètres");
 
-
--------------------------------------
-/*
-// Exercices    partie 3        afficher texte
+---------------------------------------------------------
+ // Exercices    partie 3        afficher texte
 var nom, prenom;
 
 nom = prompt("Saisissez votre nom");
@@ -48,7 +46,7 @@ var temperatureenCaconvertir = prompt("Entrez la température en Celsius")
 console.log(temperatureenCaconvertir*9/5+32)
 
 -----------------------------------
-/*
+
 //      Exercice d'entrainement perso
 let admin, name;
 name="john";
@@ -94,7 +92,6 @@ e --         ===    e - 1
 console.log(e)
 
 ---------------------------------------------
-/*
 //La concaténation   openclassroom TD
 let premierePartie = "Mon nom est Bond"
 let deuxiemePartie = ", James Bond."
@@ -105,7 +102,6 @@ console.log(punchline)
 
 -----------------------------------------------
 
-/*
 // Les opérateurs OPenclassroom TD
 let totallivres = 500;
 totallivres += 50;
@@ -119,7 +115,7 @@ affichagetotallivres += " livres."
 console.log(affichagetotallivres)
 
 ----------------------------------------------
-/*
+
 //Exercices             /partie 4 Les opérateurs
 let a, b, c, d;
 a ="100";  //une chaîne de caractères est entre doubles quotes
@@ -131,11 +127,11 @@ let b = a-- ; //sans les quotes c'est un nombre
 c += a;
 d = faux;
 console.log(d)
-*/
+
 
 //-----------------------------------------------------
 
-/*
+
 let a, b, c, d;
 a = "100";  //une chaîne de caractères est entre doubles quotes
 b = 100
@@ -426,7 +422,21 @@ var m, nombrevoyelle, compteur
 m=prompt ("saisir un mot")
 nombrevoyelle = "m"
 compteur = nombrevoyelle++
+//------------- bonne proposition EXERCICE 5 "Nombre de voyelles"    / Partie 6 Les boucles
+var res;
+var str = prompt("Entrez un mot en minuscule");
+var strlen = str.length;
+var i = 0;
+var res = 0;
 
+while (strlen > 0)
+{
+    if ((str[i] == "a") || (str[i] == "e") || (str[i] == "i") || (str[i] == "o") || (str[i] == "u") || (str[i] == "y"))
+        res++;
+    i++;
+    strlen--;
+}
+alert("Il y a " + res + " voyelles");
 -----------------------------------------------------------
 //      TEST            PARTIE 7 LES FONCTIONS
 function maFonction() 
@@ -566,7 +576,6 @@ while (n!=0)
     }
 }
 
-
 for (i=0; i < mesNombres.length ; i++ )
 {
     console.log(mesNombres[i]);
@@ -580,6 +589,30 @@ console.log("La somme des valeurs est : " + somme);
 moyenne = somme / mesNombres.length;
 
 console.log("La moyenne des valeurs est : " + moyenne);
--------------------------------------------------------------*/
+-------------------------------------------------------------
 
 //  EXERCICE         PARTIE 14   INTEGRER DU JAVASCRIPT DANS UNE PAGE WEB
+ //      1er TEST     "INTEGRATION DIRECTE"       PARTIE 14   INTEGRER DU JAVASCRIPT DANS UNE PAGE WEB
+            //Voir fichier "test js14_integration_codehtml_dans_javascript.html"
+ 
+//  EXERCICE         PARTIE 14   INTEGRER DU JAVASCRIPT DANS UNE PAGE WEB
+            // Voir fichier "exercice1 js 14_integrer javascrib dans page web.js"
+----------------------------------------------------------------
+
+// Exercice      PARTIE 15       LES EVENEMENTS
+    //  PREMIERE PARTIE DE L'EXERCICE: "bouton contrôle"
+            // voir fichiers: exercice js15-les evenements.html   et exercice js15-les evenements.js
+
+    //  DEUXIEME PARTIE DE L'EXERCICE: "Nombre Magique"
+            // voir fichiers: exercice js15-les evenements_magic nbr intégré.html   et exercice js15-les evenements_magic nbr intégré.js
+----------------------------------------------------------------
+
+//  EXERCICE        PARTIE 16   LES EXPRESSIONS REGULIERES
+    //  1er TEST
+var filtre = new RegExp("^[a-z]+$");
+var resultat = filtre.test("javascript");
+console.log(resultat);
+----------------------------------------------------------------*/
+
+//  EXERCICE        PARTIE 17   LES FORMULAIRES
+    //  1er TEST
