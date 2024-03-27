@@ -612,7 +612,13 @@ console.log("La moyenne des valeurs est : " + moyenne);
 var filtre = new RegExp("^[a-z]+$");
 var resultat = filtre.test("javascript");
 console.log(resultat);
-----------------------------------------------------------------*/
+----------------------------------------------------------------
 
 //  EXERCICE        PARTIE 17   LES FORMULAIRES
     //  1er TEST
+^0[1-9]{9}$
+-------------------
+    //  EXERCICE        PARTIE 17   LES FORMULAIRES
+        // Voir fichiers: Contact exo js17_lesformulaires
+----------------------------------------------------------------*/
+ 

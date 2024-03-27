@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="Contact exo js17_lesformulaires.css"> 
+</head>
+
+<body>
+    <form>
+        <h1>Vos coordonnées:</h1>
+        <p>*Ces zones sont obligatoires pour envoyer le formulaire.</p> <br>
+        <br>
+        <label>Société:</label>
+        <input type="text" name="Société"> * <br>
+        <br>
+        <label>Personne à contacter:</label>
+        <input type="text" name="Personne à contacter"> * <br>
+        <br>
+        <label for="adresse">Adresse de l'entreprise</label>
+        <textarea id="adresse" name="adresse" rows="5" cols="50"></textarea><br>
+        <br>
+        <label>Code postal:</label>
+        <input type="text" name="Code postal"> * <br>
+        <br>
+        <label>Ville:</label>
+        <input type="text" name="Ville"> * <br>
+        <br>
+        <label>E-mail:</label>
+        <input type="text" name="Email"> * <br>
+        <br>
+        <label>Téléphone:</label>
+        <input type="text" name="Téléphone"> * <br>
+        <br>
+        <label for="environnement technique">Sélectionnez l'environnement technique du projet</label>
+        <textarea id="environnement" name="environnement" rows="5" cols="25"></textarea><br>
+        <select id="environnement technique"> 
+            <option value = "" selected>Choisissez</option><br>
+            <option value="Access">Access</option>
+            <option value="Java">Java</option>
+            <option value="Delphi">Delphi</option>
+            <option value="Windev">Windev</option>
+            <option value="Visual Basic">Visual Basic</option>
+            <option value="Power Builder">Power Builder</option>
+            <option value="Internet">Internet</option>
+            <option value="Intranet">Intranet</option>
+            <option value="Windows NT">Windows NT</option>
+            <option value="Unix">Unix</option>
+            <option value="SQL Server">SQL Server</option>
+            <option value="Oracle">Oracle</option>
+            <option value="Autres...">Autres...</option>
+        </select> <br>
+        <br>
+        <input type="button" value="Envoyer">
+        <input type="button" value="Effacer"> <br>
+     
+    </form>
+</body>
+
+</html>
+
+
