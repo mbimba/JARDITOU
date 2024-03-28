@@ -18,8 +18,8 @@
             </p> <br>
             <br>
         </div>
-        <label class="colonnegauche" name="societe" for="societe">Société: </label> 
-        <input class="colonnegauche" type="text" name="Société" value="" placeholder="Nom de la societe" required> <span aria-label="required"> * </span> <br>
+        <label class="colonnegauche" for="societe">Société: </label> 
+        <input class="colonnegauche" type="text" name="societe" value="" placeholder="Nom de la societe" required> <span aria-label="required"> * </span> <br>
         <br>
         <label for="Personneacontacter">Personne à contacter: </label>
         <input type="text" name="Personneacontacter" value="" placeholder="Personneacontacter" required> <span aria-label="required" id="contactabsent" > * </span> <br>
@@ -28,7 +28,7 @@
         <textarea id="adresse" class="input" name="adresse" for="adresse" rows="5" cols="50" placeholder="adresse" required></textarea><br>
         <br>
         <label for="CP">Code postal: </label>
-        <input type="text" name="CP" value="" placeholder="exemple = '75000'" required> <span aria-label="required"> * </span>  <br>
+        <input type="text" name="CP" id="code" value="" placeholder="exemple = '75000'" required> <span aria-label="required"> * </span>  <br>
         <br>
         <label for="ville">Ville: </label>
         <input type="text" name="ville" id="ville" value="" placeholder="ville" required>  <span aria-label="required"> * </span> <br>
@@ -40,9 +40,9 @@
         <input type="text" name="Téléphone" id="tel" value="" placeholder="facultatif">  <br>
         <br>
         <label class="colonnegauche" for="environnementtechnique">Sélectionnez l'environnement technique du projet</label>
-        <textarea class="colonnegauche" id="environnementtechnique" name="environnement" rows="5" cols="5"></textarea><br>
-        <select class="colonnegauche" id="environnement technique">
-            <option value="" selected>Choisissez</option><br>
+        <textarea class="colonnegauche" id="textarea" name="environnement" rows="5" cols="5" onclick="ad();"></textarea><br>
+        <select class="colonnegauche" id="selection">
+            <option value="choix">Choisissez</option><br>
             <option value="Access">Access</option>
             <option value="Java">Java</option>
             <option value="Delphi">Delphi</option>
@@ -60,7 +60,7 @@
         </select> <br>
         <br>
             <div class="fin"> 
-                <input type="button" value="Envoyer" id="boutondenvoi">
+                <input class="bouton" type="button" value="Envoyer" id="boutondenvoi" onclick ="testcode (); testmail();">
                 <input type="button" value="Effacer"> <br>
             </div>
         </div>

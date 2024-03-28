@@ -1,16 +1,25 @@
 // fichier Contact exo js17_lesformulaires.js
-document.Contact exo js17_lesformulaires; 
 
-const societe= "x";         //dans le fichier html, soc correspond à société
-soc.length=1;
-console.log(soc);
-console.log(soc.length);
 
+
+//societe.length=1;
+//console.log(soc);
+//console.log(societe.length);
+var societe= document.getElementById("societe");
 var formValid = document.getElementById("boutondenvoi");
-var prenom = document.getElementById("prenom");
 var contactabsent = document.getElementById("contactabsent");
 var prenomValid = /^[a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+([-'\s][a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+)?$/;
+var choice = document.getElementById("selection").value;
 
+/*
+function "verif();"
+
+
+
+
+
+
+------------------------
 /*
 function 
 // si le champ est vide
@@ -24,7 +33,7 @@ function    testcode()              //pour tester le code postal
     var CP = document.getElementById("code").value;
     var result = filtre.test(CP);
     if(!filtre.test(CP))
-        alert("Rensiegner un code postal valide (exemple : 75000)");
+        alert("Rensiegner un code postal valide (exemple : 75000)"//);
     filtre.lastIndex;
 }
 ----------------------
@@ -40,9 +49,9 @@ function    testmail()      //pour tester le mail
 ----------------------
 function    ad()
 {
-    var ch = document.getElementById("selection").value;
+    var choice = document.getElementById("selection").value;
 
-    if (ch != "choix")
-        document.getElementById("arEa").innerHTML = ch;
+    if (choice != "choix")
+        document.getElementById("textarea").innerHTML = choice;
 }
 */

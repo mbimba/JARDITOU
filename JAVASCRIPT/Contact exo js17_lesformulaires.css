@@ -32,6 +32,10 @@ textarea
     background-color: #F7F7F7;
     color: teal;
 }
+ .bouton{   
+    margin-left: 400px;
+ }
+
 
 
 .ensemble{
@@ -61,4 +65,9 @@ flex-direction: row-reverse;
     float: row;
     align-items:flex-end;
 }
+
+.bouton{                          // permet de décaler le bloc plus au centre ou vers la droite en modifiant les px
+    margin-left: 400px;
+ }
+
 */

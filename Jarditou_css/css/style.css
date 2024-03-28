@@ -168,6 +168,10 @@ height: auto;
 }
 }
 
+.bouton{
+    margin-left: 50px;
+ }
+
 /* th,
 td {
 display: none max-width: 20%;
@@ -178,6 +182,11 @@ td {
 display: block
 }
 
+
+.bouton{                          // permet de décaler le bloc plus au centre ou vers la droite en modifiant les px
+    margin-left: 400px;
+ }
+ 
 tr {
 display: block;
 content: attr(data-label);
