@@ -1,42 +1,48 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulaire</title>
-    <link rel="stylesheet" href="Contact exo js17_lesformulaires.css"> 
+    <link rel="stylesheet" href="Contact exo js17_lesformulaires.css">
 </head>
 
 <body>
-    <form>
-        <h1>Vos coordonnées:</h1>
-        <p>*Ces zones sont obligatoires pour envoyer le formulaire.</p> <br>
+    <form class="ensemble" method="post" action="traitement.php">
+        <fieldset>
+        <div class="debut"> <!-- Ici toute ma Colonne gauche-->
+            <h1>Vos coordonnées:</h1>
+            <p>
+                <span aria-label="required">*</span> Ces zones sont obligatoires pour envoyer le formulaire.
+            </p> <br>
+            <br>
+        </div>
+        <label class="colonnegauche" name="societe" for="societe">Société: </label> 
+        <input class="colonnegauche" type="text" name="Société" value="" placeholder="Nom de la societe" required> <span aria-label="required"> * </span> <br>
         <br>
-        <label>Société:</label>
-        <input type="text" name="Société"> * <br>
+        <label for="Personneacontacter">Personne à contacter: </label>
+        <input type="text" name="Personneacontacter" value="" placeholder="Personneacontacter" required> <span aria-label="required" id="contactabsent" > * </span> <br>
         <br>
-        <label>Personne à contacter:</label>
-        <input type="text" name="Personne à contacter"> * <br>
+        <label for="adresse">Adresse de l'entreprise </label>
+        <textarea id="adresse" class="input" name="adresse" for="adresse" rows="5" cols="50" placeholder="adresse" required></textarea><br>
         <br>
-        <label for="adresse">Adresse de l'entreprise</label>
-        <textarea id="adresse" name="adresse" rows="5" cols="50"></textarea><br>
+        <label for="CP">Code postal: </label>
+        <input type="text" name="CP" value="" placeholder="exemple = '75000'" required> <span aria-label="required"> * </span>  <br>
         <br>
-        <label>Code postal:</label>
-        <input type="text" name="Code postal"> * <br>
+        <label for="ville">Ville: </label>
+        <input type="text" name="ville" id="ville" value="" placeholder="ville" required>  <span aria-label="required"> * </span> <br>
         <br>
-        <label>Ville:</label>
-        <input type="text" name="Ville"> * <br>
+        <label for="mail">E-mail:  </label>
+        <input type="text" name="mail" id="email" value="" placeholder="exemple@mail.fr" required> <span aria-label="required"> * </span>  <br>
         <br>
-        <label>E-mail:</label>
-        <input type="text" name="Email"> * <br>
+        <label for="tel">Téléphone: </label>
+        <input type="text" name="Téléphone" id="tel" value="" placeholder="facultatif">  <br>
         <br>
-        <label>Téléphone:</label>
-        <input type="text" name="Téléphone"> * <br>
-        <br>
-        <label for="environnement technique">Sélectionnez l'environnement technique du projet</label>
-        <textarea id="environnement" name="environnement" rows="5" cols="25"></textarea><br>
-        <select id="environnement technique"> 
-            <option value = "" selected>Choisissez</option><br>
+        <label class="colonnegauche" for="environnementtechnique">Sélectionnez l'environnement technique du projet</label>
+        <textarea class="colonnegauche" id="environnementtechnique" name="environnement" rows="5" cols="5"></textarea><br>
+        <select class="colonnegauche" id="environnement technique">
+            <option value="" selected>Choisissez</option><br>
             <option value="Access">Access</option>
             <option value="Java">Java</option>
             <option value="Delphi">Delphi</option>
@@ -50,14 +56,19 @@
             <option value="SQL Server">SQL Server</option>
             <option value="Oracle">Oracle</option>
             <option value="Autres...">Autres...</option>
+
         </select> <br>
         <br>
-        <input type="button" value="Envoyer">
-        <input type="button" value="Effacer"> <br>
-     
+            <div class="fin"> 
+                <input type="button" value="Envoyer" id="boutondenvoi">
+                <input type="button" value="Effacer"> <br>
+            </div>
+        </div>
+    </fieldset>
     </form>
+
+
+<script src="Contact exo js17_lesformulaires.js"></script>
 </body>
 
 </html>
-
-
